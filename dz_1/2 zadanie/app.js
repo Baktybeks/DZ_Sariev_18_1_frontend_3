@@ -1,58 +1,26 @@
-let smallBlock = document.querySelector(".small");
-
+let smallBox = document.querySelector(".smallBox");
+let moveLeft = 0;
 
 const MoveLeft = () => {
-    smallBlock.addEventListener("click", () => {
-        smallBlock.style.left += `${20}px`
+    moveLeft += 20
+    smallBox.addEventListener("click", () => {
+        if (moveLeft < 500-50-20) {
+            smallBox.style.left = `${moveLeft}px`
+            console.log("if=", moveLeft)
+            MoveLeft()
+        }
     })
-    MoveLeft()
-}
+};
 MoveLeft()
 
+
 // const MoveLeft = () => {
-//     // smallBlock.addEventListener("click", () => {
-//         smallBlock.style.left = +`${20}px`
-//     // })
-//
-//     MoveLeft()
-//
+//     if (moveLeft < 500-50-20) {
+//         moveLeft += 20
+//         smallBox.addEventListener("click", () => {
+//             smallBox.style.left = ${moveLeft}px
+//         })
+//         MoveLeft();
+//     }
 // }
 // MoveLeft()
-//
-//
-// function Left() {
-//     smallBlock.addEventListener("click", () => {
-//         smallBlock.style.left = `${20}px`
-//     })
-//     Left()
-// }
-//
-//
-// Left()
-
-
-// const parentsList = (obj) => {
-//   if (obj.parents) {
-//     for (let key in obj.parents) {
-//       console.log(key);
-//       parentsList(obj.parents[key]);
-//     }
-//   } else {
-//     console.log("no such key");
-//   }
-// };
-//
-// for (let key in people) {
-//   parentsList(people[key]);
-// }
-
-
-phoneCheck.addEventListener("click", () => {
-    if (phoneRegExp.test(phoneInput.value)) {
-        phoneResult.innerText = "ok";
-        phoneResult.style.color = "green";
-    } else {
-        phoneResult.innerText = "not ok";
-        phoneResult.style.color = "red";
-    }
-});
