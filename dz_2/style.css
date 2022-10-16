@@ -1,0 +1,15 @@
+.bigBox {
+    height: 500px;
+    width: 500px;
+    border: 1px solid;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.smallBox {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+}
