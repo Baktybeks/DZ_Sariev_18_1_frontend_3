@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center; /*по вертикали*/
+    justify-content: center; /* по горизонтали*/
+    max-width: 500px;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.usd,  .ru{
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px 20px;
+}
+
+label {
+    font-size: 20px;
+}
