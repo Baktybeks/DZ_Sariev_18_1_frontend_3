@@ -67,9 +67,9 @@ const scrollHeight = document.documentElement.scrollHeight;
 const clientHeight = document.documentElement.clientHeight;
 const height = scrollHeight - clientHeight;
 
-console.log(scrollHeight)
-console.log(clientHeight)
-console.log(height)
+// console.log(scrollHeight)
+// console.log(clientHeight)
+// console.log(height)
 
 //1 задание сделать слайдер автоматическим
 let index = 0
